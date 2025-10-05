@@ -166,18 +166,24 @@
       </div>
     </section>
 
-    <section id="controls">
-      <label for="asteroid">Selecciona un asteroide:</label>
-      <select id="asteroid"></select><br>
+<section id="controls">
+  <label for="asteroid">Selecciona un asteroide:</label>
+  <select id="asteroid"></select><br>
 
-      <label for="velocityInput">Velocidad (m/s):</label>
-      <input type="number" id="velocityInput" placeholder="Ingrese velocidad"><br>
+<label for="velocityInput">Velocidad (km/h):
+  <span class="infoButton" data-info= "Esta es la velocidad oficial del asteroide en km/h según datos de la NASA. La puedes modificar si no quieres ese valor">?</span>
+</label>
+<input type="number" id="velocityInput" placeholder="Ingrese velocidad">
 
-      <label for="densityInput">Densidad (kg/m³):</label>
-      <input type="number" id="densityInput" placeholder="Ingrese densidad"><br>
+<label for="densityInput">Densidad (kg/m³):
+  <span class="infoButton" data-info="Ingresa la densidad que quieras del asteroide en kg/m³. No se asigna automaticamente ya que no hay datos oficiales">?</span>
+</label>
+<input type="number" id="densityInput" placeholder="Ingrese densidad">
 
-      <button id="simulateBtn">Simular Impacto</button>
-    </section>
+
+  <button id="simulateBtn">Simular Impacto</button>
+</section>
+
 
     <section id="results">
       <h2>Resultados de la simulación</h2>
@@ -232,10 +238,11 @@
 
 <div id="helpPopup" class="hidden">
   <h3>🪐 Instrucciones</h3>
-  <p>1️⃣ Selecciona un asteroide de la lista e ingresa tus propios valores de velocidad y densidad.</p>
-  <p>2️⃣ Presiona <strong>“Simular Impacto”</strong> para calcular los resultados.</p>
-  <p>3️⃣ Observa los datos del cráter, la energía liberada y el nivel de riesgo. </p>
-  <p>4️⃣ Haz clic en el mapa para ubicar el posible punto de impacto.</p>
+  <p>1️⃣ Selecciona un asteroide de la lista, se ingresará automaticamente el valor de velocidad</p>
+  <p>2️⃣ Agrega tu propio valor de densidad.</p>
+  <p>3️⃣ Presiona <strong>“Simular Impacto”</strong> para calcular los resultados.</p>
+  <p>4️⃣ Observa los datos del cráter, la energía liberada y el nivel de riesgo.</p>
+  <p>5️⃣ Haz clic en el mapa para ubicar el posible punto de impacto.</p>
   <p>💡 Puedes repetir la simulación con diferentes valores para comparar resultados.</p>
   <button id="closeHelp">Cerrar</button>
 </div>
